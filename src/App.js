@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+// @packages
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+} from 'react-router-dom';
+import { RecoilRoot } from 'recoil';
+
+// @app
+import PlanetListContainer from './containers/PlanetList';
+import SearchBoxContainer from './containers/SearchBox';
+
+// @own
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RecoilRoot>
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <SearchBoxContainer />
+            </Route>
+            <Route exact path="/your-planets">
+              <PlanetListContainer />
+            </Route>
+          </Switch>
+        </Router>
+      </RecoilRoot>
     </div>
   );
 }

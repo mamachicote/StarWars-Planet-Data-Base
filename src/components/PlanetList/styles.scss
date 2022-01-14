@@ -1,0 +1,41 @@
+.Planet-Back {
+  align-items: center;
+  background-color: #1565C0;
+  border-radius: 5px;
+  border: 1px solid #fafafa;
+  color: #fafafa;
+  cursor: pointer;
+  display: flex;
+  font-weight: bold;
+  height: 30px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 225px;
+
+  &:hover {
+    background-color: #1678e0;
+  }
+}
+
+.Planet-List {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+  text-transform: capitalize;
+
+  &__Card {
+    width: 400px;
+    height: 100%;
+    margin: 10px;
+
+    &-Header {
+      color: #fafafa;
+      text-align: center;
+    }
+
+    &-Content {
+      color: #fafafa;
+    }
+  }
+}

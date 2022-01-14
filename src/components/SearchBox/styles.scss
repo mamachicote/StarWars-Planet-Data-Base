@@ -1,0 +1,20 @@
+.SearchBox {
+  background-color: #a8a2a3;
+  border-radius: 5px;
+  border: 1px solid #fafafa;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 95%;
+  padding: 25px;
+
+  &__Input {
+    width: 75%;
+    color: white;
+  }
+
+  &__Button {
+    width: 7.5%;
+    height: 50px;
+  }
+}
