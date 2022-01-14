@@ -14,10 +14,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
-
-To see tests on the correct functioning of the components
-
 ### Folder Structure
 
 To follow some standard your project estructure should look like this:
